@@ -40,10 +40,10 @@ export default async function Home({
         </div>
         <div className="relative z-10 max-w-3xl mx-auto space-y-6">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight drop-shadow-md">
-            Jelajahi Literatur Klasik
+            Biru Litera
           </h1>
           <p className="text-lg sm:text-xl text-primary-50 max-w-2xl mx-auto font-medium drop-shadow">
-            Akses ribuan koleksi buku dari Project Gutenberg secara gratis tanpa batas.
+            Akses ribuan koleksi buku secara gratis tanpa batas.
           </p>
 
           <div className="pt-8">
