@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 BiruLitera
 
-## Getting Started
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-blue?style=for-the-badge)](https://birulitera.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js-Black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-First, run the development server:
+**BiruLitera** is an online library platform that allows users to access and read thousands of classic books for free, without any limitations. This project is built with a modern, responsive interface and focuses heavily on providing a comfortable reading experience (*Focus on reading*).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The book data displayed on this platform is sourced from the [Gutendex API](https://gutendex.com/), which provides a real-time catalog of public domain books from Project Gutenberg.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Popular Collections:** Access over 77,000 public domain books from around the world.
+* **Read for Free:** Direct access to read books without the need to sign up, subscribe, or pay.
+* **Language Filter:** Supports searching and filtering books by various languages (English, Indonesian, French, German, Spanish, Dutch, etc.).
+* **Detailed Book Information:** Displays attractive book covers, author names, and download statistics.
+* **Responsive Design:** Optimized UI/UX for a comfortable experience across both desktop and mobile devices.
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+This project is built using modern web technologies to ensure fast performance and a great developer experience:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* **Framework:** [Next.js](https://nextjs.org/) (App Router)
+* **Language:** [TypeScript](https://www.typescriptlang.org/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **API:** [Gutendex API](https://gutendex.com/) (Project Gutenberg)
+* **Deployment:** [Vercel](https://vercel.com/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Getting Started (Local Development)
 
-## Deploy on Vercel
+Follow the steps below to run BiruLitera on your local machine.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine along with a package manager like `npm`, `yarn`, `pnpm`, or `bun`.
+
+### Installation & Running the Server
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/rimantmp/birulitera.git](https://github.com/rimantmp/birulitera.git)
+    cd birulitera
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    ```
+
+4.  **Open in Browser:**
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. The page will automatically update as you edit the source code (e.g., in `app/page.tsx`).
+
+## Live Deployment
+
+This application is deployed using Vercel and is publicly accessible. Check out the live version here:
+
+**[birulitera.vercel.app](https://birulitera.vercel.app/)**
+
+## Contributing
+
+Contributions of any kind are highly appreciated! If you find a bug, an issue, or have a new feature idea
+
+---
+
+<p align="center">
+  <i>© 2026 BiruLitera. Focus on reading.</i>
+</p>
