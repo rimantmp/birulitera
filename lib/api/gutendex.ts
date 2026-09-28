@@ -8,6 +8,12 @@ async function fetchWithRetry(url: string, attempt = 1): Promise<Response> {
             // Use ISR for cached data, revalidate every hour
             next: { revalidate: 3600 },
             signal: AbortSignal.timeout(15000),
+            headers: {
+                // Gutendex (behind Cloudflare) blocks the default Node/undici
+                // user-agent with 403 Forbidden — send a browser-like one.
+                'User-Agent': 'BiruLitera/0.1 (+https://github.com/rimantmp/birulitera)',
+                'Accept': 'application/json',
+            },
         });
 
         if (!res.ok) {
