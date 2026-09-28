@@ -10,7 +10,15 @@ export default function Error({
     reset: () => void;
 }) {
     useEffect(() => {
-        console.error(error);
+        // Log lengkap ke console browser untuk analisa
+        console.error('[BiruLitera Error]', {
+            name: error.name,
+            message: error.message,
+            digest: error.digest,
+            stack: error.stack,
+            timestamp: new Date().toISOString(),
+            url: window.location.href,
+        });
     }, [error]);
 
     return (
@@ -23,6 +31,14 @@ export default function Error({
             >
                 Coba lagi
             </button>
+
+            {/* Panel debug — hapus setelah dianalisa */}
+            <pre className="mt-6 max-w-2xl w-full text-left text-xs bg-gray-100 text-gray-700 rounded-lg p-4 overflow-x-auto whitespace-pre-wrap">
+{`name: ${error.name}
+message: ${error.message}
+digest: ${error.digest ?? '-'}
+url: ${typeof window !== 'undefined' ? window.location.href : '-'}`}
+            </pre>
         </div>
     );
 }
