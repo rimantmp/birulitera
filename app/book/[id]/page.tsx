@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Button } from '@/components/ui/Button';
 
+export const maxDuration = 60;
+
 export default async function BookDetail({ params }: { params: Promise<{ id: string }> }) {
     let book;
     try {

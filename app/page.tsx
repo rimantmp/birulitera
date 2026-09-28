@@ -1,6 +1,8 @@
 import { Suspense } from 'react';
 import Image from 'next/image';
 import { getBooks } from '@/lib/api/gutendex';
+
+export const maxDuration = 60;
 import BookCard from '@/components/ui/BookCard';
 import Pagination from '@/components/ui/Pagination';
 import SearchBar from '@/components/ui/SearchBar';

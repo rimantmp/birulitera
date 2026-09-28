@@ -2,6 +2,8 @@ import { getBookById } from '@/lib/api/gutendex';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
+export const maxDuration = 60;
+
 export default async function ReadBook({ params }: { params: Promise<{ id: string }> }) {
     let book;
     try {
